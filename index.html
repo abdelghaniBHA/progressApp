@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!--link css-->
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+
+    <div class="container">
+
+        <section class="sec1" id="sec1">
+            <nav>
+                <h1>Abdelghani</h1>
+                <ul>
+                    <li class="q" data-text="Quest">   <a href="#sec2"><i class='bx bx-calendar-check' ></i></a></li>
+                    <li class="p" data-text="Progress"><a href="#sec3"><i class='bx bx-trending-up' ></i></a></li>
+                    <li class="n" data-text="Notes">   <a href="#sec4"><i class='bx bx-notepad' ></i></a></li>                
+                </ul>
+            </nav>
+    
+            <div class="switch">
+                <img id="img" src="images/moon.png" alt="">
+                <span></span>
+            </div>
+        </section>
+    
+        <section class="sec2" id="sec2">
+    
+    
+            <div class="app">
+                <div class="info">
+                    <h1>To-Do List</h1>
+                    <img src="images/icon.png">
+                </div>
+    
+                <div class="row">
+                    <input type="text" placeholder="write here" id="inputbox">
+                    <button onclick="addtask()"><span>ADD</span></button>
+                </div>
+
+                <ul id="listcontainer">
+                    <div></div>
+                </ul>
+            </div>
+        </section>
+
+        <section class="sec3" id="sec3">
+            <div class="content1">
+                <div class="app2">
+                    <div class="block">
+                        
+                        <div id="h3in">
+                            <h1>HTML</h1>
+                            <input type="number" id="inp" placeholder="..%">
+                        </div>
+                        <div class="progress">
+                            <div class="progress-done">
+                                <span id="tooltip">%</span>
+                            </div>
+                        </div>
+                        
+                    </div>
+                    <div class="block">
+                        
+                        <div id="h3in">
+                            <h1>CSS</h1>
+                            <input type="number" id="inp" placeholder="..%">
+                        </div>
+                                
+                        <div class="progress">
+                            <div class="progress-done">
+                                <span id="tooltip">%</span>
+                            </div>
+                        </div>
+                        
+                    </div>
+                    <div class="block">
+                        
+                        <div id="h3in">
+                            <h1>JS</h1>
+                            <input type="number" id="inp" placeholder="..%">
+                        </div>
+
+                        <div class="progress">
+                            <div class="progress-done">
+                                <span id="tooltip">%</span>
+                            </div>
+                        </div>
+                        
+                    </div>
+                    <div class="block">
+                        
+                        <div id="h3in">
+                            <h1>Bootstrap</h1>
+                            <input type="number" id="inp" placeholder="..%">
+                        </div>
+
+                        <div class="progress">
+                            <div class="progress-done">
+                                <span id="tooltip">%</span>
+                            </div>
+                        </div>
+                        
+                    </div>
+                    <div class="block">
+                        
+                        <div id="h3in">
+                            <h1>React.JS</h1>
+                            <input type="number" id="inp" placeholder="..%">
+                        </div>
+
+                        <div class="progress">
+                            <div class="progress-done">
+                                <span id="tooltip">%</span>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+            <div class="content2">
+                <div class="overall">
+                    <div class="skill">
+                        <div class="outer">
+                            <div class="inner">
+                                <div class="number">
+                                    <span id="overall"></span>
+                                </div>
+                            </div>
+                        </div>
+                        <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="160px" height="160px">
+                            <defs>
+                               <linearGradient id="GradientColor">
+                                  <stop offset="0%" stop-color="#e91e63" />
+                                  <stop offset="100%" stop-color="#673ab7" />
+                               </linearGradient>
+                            </defs>
+                            <circle id="cir" cx="80" cy="80" r="70" stroke-linecap="round" />
+                        </svg>
+                    </div>
+                    <button id="calc" onclick="calcAverage()">calc</button>
+
+                </div>
+            </div>
+            
+        </section>
+        
+
+        <div class="sec4" id="sec4">
+            <h1> <img src="images/notes.png"> Notes</h1>
+            <button id="btn"> <img src="images/edit.png"> Create Notes</button>
+            <div class="notes-container">
+                <!--<p contenteditable="true" class="input-box"> 
+                    <img src="images/delete.png" alt="">
+                </p>-->
+            </div>
+        </div>
+        
+
+
+        
+           
+    </div>
+    
+    <!--link javascript-->
+    <script src="script.js"></script>
+</body>
+</html>
